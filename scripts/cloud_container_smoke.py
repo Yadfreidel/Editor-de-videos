@@ -34,12 +34,15 @@ with av.open(str(video)) as container:
  assert abs(float(v.duration*v.time_base)-float(a.duration*a.time_base))<.15
 assert guest.get(job['result']['video']).status_code==401
 assert owner.get(job['result']['video']).status_code==200
-voice=root/'jobs'/job['id']/'voice0.wav';clean=root/'uploads'/'cloud-original-test.mp4'
-subprocess.run([os.getenv('FFMPEG_PATH','ffmpeg'),'-y','-v','error','-f','lavfi','-i','color=c=0x173c38:s=640x360:r=15','-stream_loop','-1','-i',str(voice),'-t','45','-c:v','libx264','-threads','1','-preset','ultrafast','-c:a','aac',str(clean)],check=True)
+voice=root/'uploads'/'cloud-narration.wav';clean=root/'uploads'/'cloud-original-test.mp4'
+text=root/'uploads'/'cloud-narration.txt'
+text.write_text('''Hoy vamos a preparar una historia para compartir con nuestro equipo. Primero elegimos una idea sencilla y escribimos un guion claro. Despu?s buscamos im?genes propias y comprobamos que tenemos permiso para utilizarlas. La luz de la ma?ana entra por la ventana y permite grabar sin equipos complicados. Colocamos el tel?fono sobre una mesa y escuchamos el sonido antes de empezar. Una buena pregunta ayuda a presentar el tema y despertar la curiosidad. Cuando terminamos de grabar, revisamos cada parte y quitamos los silencios demasiado largos. Tambi?n a?adimos subt?tulos para que otras personas puedan seguir la conversaci?n. Antes de publicar, compartimos una copia privada con el cliente y esperamos sus comentarios. Finalmente guardamos el proyecto y una copia del video para poder encontrarlo otro d?a. Esta prueba utiliza una historia original y no contiene informaci?n personal de ninguna persona.''',encoding='utf-8')
+subprocess.run([sys.executable,'-m','piper','-m',os.environ['PIPER_MODEL'],'-f',str(voice),'--input-file',str(text)],check=True)
+subprocess.run([os.getenv('FFMPEG_PATH','ffmpeg'),'-y','-v','error','-f','lavfi','-i','color=c=0x173c38:s=640x360:r=15','-i',str(voice),'-shortest','-c:v','libx264','-threads','1','-preset','ultrafast','-c:a','aac',str(clean)],check=True)
 with clean.open('rb') as source:
  r=owner.post('/api/upload',files={'file':('cloud-original-test.mp4',source,'video/mp4')});assert r.status_code==200,r.text;asset=r.json()['name']
 batch=post('/batches',{'asset':asset,'name':'Cloud container integration','authorized':True,'count':3,'target':15})
-wait(batch['selectionJob']);b=owner.get('/api/batches/'+batch['id']).json();assert len(b['clips'])>=2
+wait(batch['selectionJob']);b=owner.get('/api/batches/'+batch['id']).json();assert b['transcriptionOrigin']=='whisper' and len(b['clips'])>=2,{'clips':len(b['clips']),'notice':b.get('notice')}
 for clip in b['clips'][:2]:
  owner.put('/api/batches/'+b['id']+'/clips/'+clip['id'],json={'status':'approved','variant':'A'}).raise_for_status()
  project=clip['project'];project['scenes'][0]['duration']=3;owner.put('/api/projects/'+project['id'],json=project).raise_for_status()
