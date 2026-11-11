@@ -1,0 +1,23 @@
+{
+  "originalProjectsUnchanged": 1,
+  "startScriptUnchanged": true,
+  "audit": "C:\\Users\\User\\edictor de videos\\workspace\\audit\\20261111-120957",
+  "migrations": [
+    [
+      1,
+      "legacy_baseline"
+    ],
+    [
+      2,
+      "production_workspaces"
+    ],
+    [
+      3,
+      "idempotent_requests"
+    ],
+    [
+      4,
+      "private_job_scopes"
+    ]
+  ]
+}

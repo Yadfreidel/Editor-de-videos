@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-11",
+  "originalProjectsUnchanged": 1,
+  "startupScriptUnchanged": true,
+  "migrations": [
+    [
+      1,
+      "legacy_baseline"
+    ],
+    [
+      2,
+      "production_workspaces"
+    ],
+    [
+      3,
+      "idempotent_requests"
+    ],
+    [
+      4,
+      "private_job_scopes"
+    ]
+  ],
+  "reports": [
+    "existing-project-verification.json",
+    "verification.json",
+    "production-verification.json",
+    "framing-verification.json",
+    "review-verification.json",
+    "analytics-verification.json",
+    "restart-verification.json",
+    "whisper-batch-verification.json",
+    "production-ui-verification.json",
+    "ui-verification.json"
+  ],
+  "application": "http://127.0.0.1:3000",
+  "remoteServiceDeployed": false,
+  "remoteServiceTested": false,
+  "linuxTested": false,
+  "gpuTested": false,
+  "ollamaConfigured": false,
+  "git": "No Git repository; sources and database backed up before implementation",
+  "baseline": "C:\\Users\\User\\edictor de videos\\workspace\\audit\\20261111-120957"
+}

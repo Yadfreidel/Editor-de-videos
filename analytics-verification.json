@@ -1,0 +1,11 @@
+{
+  "legacyCsv": true,
+  "idempotentImport": true,
+  "missingVersusZero": true,
+  "ambiguousAssociationRequiresCorrection": true,
+  "accountPlatformWindowSeparated": true,
+  "sampleSizeDisplayed": true,
+  "smallSamplesAvoidConclusion": true,
+  "filters": true,
+  "styleReuseAsHypothesis": true
+}

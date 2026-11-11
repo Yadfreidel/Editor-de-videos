@@ -1,0 +1,2872 @@
+{
+  "id": "e8536b6e8ca5437993b12f9ea73bae44",
+  "kind": "transcribe",
+  "status": "done",
+  "progress": 100,
+  "created": "2026-11-11T15:47:13.018810+00:00",
+  "payload": {
+    "asset": "test-long.mp4",
+    "target": 30,
+    "segments": []
+  },
+  "result": {
+    "clips": [
+      {
+        "start": 0.0,
+        "end": 30.28,
+        "text": " Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera.  Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera.  Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera.  Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera.  Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera.",
+        "reason": "Corte en límite de segmento de transcripción. Revisa que la idea se entienda sin el contexto anterior.",
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 2.36,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 0.0,
+                "end": 0.32,
+                "word": " Una"
+              },
+              {
+                "start": 0.32,
+                "end": 0.88,
+                "word": " historia"
+              },
+              {
+                "start": 0.88,
+                "end": 1.38,
+                "word": " empieza"
+              },
+              {
+                "start": 1.38,
+                "end": 1.66,
+                "word": " con"
+              },
+              {
+                "start": 1.66,
+                "end": 1.88,
+                "word": " una"
+              },
+              {
+                "start": 1.88,
+                "end": 2.36,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 2.76,
+            "end": 5.18,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 2.76,
+                "end": 2.86,
+                "word": " Hoy"
+              },
+              {
+                "start": 2.86,
+                "end": 3.26,
+                "word": " vamos"
+              },
+              {
+                "start": 3.26,
+                "end": 3.48,
+                "word": " a"
+              },
+              {
+                "start": 3.48,
+                "end": 3.78,
+                "word": " mirar"
+              },
+              {
+                "start": 3.78,
+                "end": 4.06,
+                "word": " las"
+              },
+              {
+                "start": 4.06,
+                "end": 4.32,
+                "word": " cosas"
+              },
+              {
+                "start": 4.32,
+                "end": 4.58,
+                "word": " de"
+              },
+              {
+                "start": 4.58,
+                "end": 4.74,
+                "word": " otra"
+              },
+              {
+                "start": 4.74,
+                "end": 5.18,
+                "word": " manera."
+              }
+            ]
+          },
+          {
+            "start": 6.24,
+            "end": 8.62,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 6.24,
+                "end": 6.52,
+                "word": " Una"
+              },
+              {
+                "start": 6.52,
+                "end": 7.16,
+                "word": " historia"
+              },
+              {
+                "start": 7.16,
+                "end": 7.68,
+                "word": " empieza"
+              },
+              {
+                "start": 7.68,
+                "end": 7.94,
+                "word": " con"
+              },
+              {
+                "start": 7.94,
+                "end": 8.12,
+                "word": " una"
+              },
+              {
+                "start": 8.12,
+                "end": 8.62,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 8.92,
+            "end": 11.36,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 8.92,
+                "end": 9.12,
+                "word": " Hoy"
+              },
+              {
+                "start": 9.12,
+                "end": 9.5,
+                "word": " vamos"
+              },
+              {
+                "start": 9.5,
+                "end": 9.72,
+                "word": " a"
+              },
+              {
+                "start": 9.72,
+                "end": 10.02,
+                "word": " mirar"
+              },
+              {
+                "start": 10.02,
+                "end": 10.22,
+                "word": " las"
+              },
+              {
+                "start": 10.22,
+                "end": 10.56,
+                "word": " cosas"
+              },
+              {
+                "start": 10.56,
+                "end": 10.82,
+                "word": " de"
+              },
+              {
+                "start": 10.82,
+                "end": 11.0,
+                "word": " otra"
+              },
+              {
+                "start": 11.0,
+                "end": 11.36,
+                "word": " manera."
+              }
+            ]
+          },
+          {
+            "start": 12.26,
+            "end": 14.86,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 12.26,
+                "end": 12.78,
+                "word": " Una"
+              },
+              {
+                "start": 12.78,
+                "end": 13.42,
+                "word": " historia"
+              },
+              {
+                "start": 13.42,
+                "end": 13.94,
+                "word": " empieza"
+              },
+              {
+                "start": 13.94,
+                "end": 14.18,
+                "word": " con"
+              },
+              {
+                "start": 14.18,
+                "end": 14.38,
+                "word": " una"
+              },
+              {
+                "start": 14.38,
+                "end": 14.86,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 15.16,
+            "end": 17.6,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 15.16,
+                "end": 15.4,
+                "word": " Hoy"
+              },
+              {
+                "start": 15.4,
+                "end": 15.74,
+                "word": " vamos"
+              },
+              {
+                "start": 15.74,
+                "end": 15.98,
+                "word": " a"
+              },
+              {
+                "start": 15.98,
+                "end": 16.28,
+                "word": " mirar"
+              },
+              {
+                "start": 16.28,
+                "end": 16.48,
+                "word": " las"
+              },
+              {
+                "start": 16.48,
+                "end": 16.8,
+                "word": " cosas"
+              },
+              {
+                "start": 16.8,
+                "end": 17.06,
+                "word": " de"
+              },
+              {
+                "start": 17.06,
+                "end": 17.24,
+                "word": " otra"
+              },
+              {
+                "start": 17.24,
+                "end": 17.6,
+                "word": " manera."
+              }
+            ]
+          },
+          {
+            "start": 18.46,
+            "end": 22.64,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 18.46,
+                "end": 19.06,
+                "word": " Una"
+              },
+              {
+                "start": 19.06,
+                "end": 19.66,
+                "word": " historia"
+              },
+              {
+                "start": 19.66,
+                "end": 22.52,
+                "word": " empieza"
+              },
+              {
+                "start": 22.52,
+                "end": 22.64,
+                "word": " con"
+              },
+              {
+                "start": 22.64,
+                "end": 22.64,
+                "word": " una"
+              },
+              {
+                "start": 22.64,
+                "end": 22.64,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 22.64,
+            "end": 23.88,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 22.64,
+                "end": 22.64,
+                "word": " Hoy"
+              },
+              {
+                "start": 22.64,
+                "end": 22.64,
+                "word": " vamos"
+              },
+              {
+                "start": 22.64,
+                "end": 22.64,
+                "word": " a"
+              },
+              {
+                "start": 22.64,
+                "end": 22.64,
+                "word": " mirar"
+              },
+              {
+                "start": 22.64,
+                "end": 22.68,
+                "word": " las"
+              },
+              {
+                "start": 22.68,
+                "end": 23.08,
+                "word": " cosas"
+              },
+              {
+                "start": 23.08,
+                "end": 23.28,
+                "word": " de"
+              },
+              {
+                "start": 23.28,
+                "end": 23.46,
+                "word": " otra"
+              },
+              {
+                "start": 23.46,
+                "end": 23.88,
+                "word": " manera."
+              }
+            ]
+          },
+          {
+            "start": 24.68,
+            "end": 27.38,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 24.68,
+                "end": 25.28,
+                "word": " Una"
+              },
+              {
+                "start": 25.28,
+                "end": 25.86,
+                "word": " historia"
+              },
+              {
+                "start": 25.86,
+                "end": 26.42,
+                "word": " empieza"
+              },
+              {
+                "start": 26.42,
+                "end": 26.62,
+                "word": " con"
+              },
+              {
+                "start": 26.62,
+                "end": 26.86,
+                "word": " una"
+              },
+              {
+                "start": 26.86,
+                "end": 27.38,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 27.38,
+            "end": 30.28,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 27.38,
+                "end": 27.86,
+                "word": " Hoy"
+              },
+              {
+                "start": 27.86,
+                "end": 28.26,
+                "word": " vamos"
+              },
+              {
+                "start": 28.26,
+                "end": 28.48,
+                "word": " a"
+              },
+              {
+                "start": 28.48,
+                "end": 28.8,
+                "word": " mirar"
+              },
+              {
+                "start": 28.8,
+                "end": 29.08,
+                "word": " las"
+              },
+              {
+                "start": 29.08,
+                "end": 29.32,
+                "word": " cosas"
+              },
+              {
+                "start": 29.32,
+                "end": 29.58,
+                "word": " de"
+              },
+              {
+                "start": 29.58,
+                "end": 29.74,
+                "word": " otra"
+              },
+              {
+                "start": 29.74,
+                "end": 30.28,
+                "word": " manera."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "start": 31.4,
+        "end": 61.42,
+        "text": " Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera.  Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera.  Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera.  Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera.  Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera.",
+        "reason": "Corte en límite de segmento de transcripción. Revisa que la idea se entienda sin el contexto anterior.",
+        "segments": [
+          {
+            "start": 31.4,
+            "end": 33.6,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 31.4,
+                "end": 31.52,
+                "word": " Una"
+              },
+              {
+                "start": 31.52,
+                "end": 32.14,
+                "word": " historia"
+              },
+              {
+                "start": 32.14,
+                "end": 32.62,
+                "word": " empieza"
+              },
+              {
+                "start": 32.62,
+                "end": 32.9,
+                "word": " con"
+              },
+              {
+                "start": 32.9,
+                "end": 33.12,
+                "word": " una"
+              },
+              {
+                "start": 33.12,
+                "end": 33.6,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 34.0,
+            "end": 36.34,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 34.0,
+                "end": 34.1,
+                "word": " Hoy"
+              },
+              {
+                "start": 34.1,
+                "end": 34.5,
+                "word": " vamos"
+              },
+              {
+                "start": 34.5,
+                "end": 34.74,
+                "word": " a"
+              },
+              {
+                "start": 34.74,
+                "end": 35.04,
+                "word": " mirar"
+              },
+              {
+                "start": 35.04,
+                "end": 35.32,
+                "word": " las"
+              },
+              {
+                "start": 35.32,
+                "end": 35.54,
+                "word": " cosas"
+              },
+              {
+                "start": 35.54,
+                "end": 35.82,
+                "word": " de"
+              },
+              {
+                "start": 35.82,
+                "end": 36.0,
+                "word": " otra"
+              },
+              {
+                "start": 36.0,
+                "end": 36.34,
+                "word": " manera."
+              }
+            ]
+          },
+          {
+            "start": 37.4,
+            "end": 39.86,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 37.4,
+                "end": 37.78,
+                "word": " Una"
+              },
+              {
+                "start": 37.78,
+                "end": 38.4,
+                "word": " historia"
+              },
+              {
+                "start": 38.4,
+                "end": 38.92,
+                "word": " empieza"
+              },
+              {
+                "start": 38.92,
+                "end": 39.18,
+                "word": " con"
+              },
+              {
+                "start": 39.18,
+                "end": 39.36,
+                "word": " una"
+              },
+              {
+                "start": 39.36,
+                "end": 39.86,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 40.18,
+            "end": 42.62,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 40.18,
+                "end": 40.38,
+                "word": " Hoy"
+              },
+              {
+                "start": 40.38,
+                "end": 40.74,
+                "word": " vamos"
+              },
+              {
+                "start": 40.74,
+                "end": 40.98,
+                "word": " a"
+              },
+              {
+                "start": 40.98,
+                "end": 41.28,
+                "word": " mirar"
+              },
+              {
+                "start": 41.28,
+                "end": 41.5,
+                "word": " las"
+              },
+              {
+                "start": 41.5,
+                "end": 41.84,
+                "word": " cosas"
+              },
+              {
+                "start": 41.84,
+                "end": 42.06,
+                "word": " de"
+              },
+              {
+                "start": 42.06,
+                "end": 42.24,
+                "word": " otra"
+              },
+              {
+                "start": 42.24,
+                "end": 42.62,
+                "word": " manera."
+              }
+            ]
+          },
+          {
+            "start": 43.44,
+            "end": 46.04,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 43.44,
+                "end": 44.02,
+                "word": " Una"
+              },
+              {
+                "start": 44.02,
+                "end": 44.66,
+                "word": " historia"
+              },
+              {
+                "start": 44.66,
+                "end": 45.18,
+                "word": " empieza"
+              },
+              {
+                "start": 45.18,
+                "end": 45.42,
+                "word": " con"
+              },
+              {
+                "start": 45.42,
+                "end": 45.62,
+                "word": " una"
+              },
+              {
+                "start": 45.62,
+                "end": 46.04,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 46.42,
+            "end": 48.86,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 46.42,
+                "end": 46.64,
+                "word": " Hoy"
+              },
+              {
+                "start": 46.64,
+                "end": 46.98,
+                "word": " vamos"
+              },
+              {
+                "start": 46.98,
+                "end": 47.22,
+                "word": " a"
+              },
+              {
+                "start": 47.22,
+                "end": 47.54,
+                "word": " mirar"
+              },
+              {
+                "start": 47.54,
+                "end": 48.12,
+                "word": " las"
+              },
+              {
+                "start": 48.12,
+                "end": 48.12,
+                "word": " cosas"
+              },
+              {
+                "start": 48.12,
+                "end": 48.28,
+                "word": " de"
+              },
+              {
+                "start": 48.28,
+                "end": 48.48,
+                "word": " otra"
+              },
+              {
+                "start": 48.48,
+                "end": 48.86,
+                "word": " manera."
+              }
+            ]
+          },
+          {
+            "start": 49.82,
+            "end": 52.36,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 49.82,
+                "end": 50.28,
+                "word": " Una"
+              },
+              {
+                "start": 50.28,
+                "end": 50.84,
+                "word": " historia"
+              },
+              {
+                "start": 50.84,
+                "end": 51.34,
+                "word": " empieza"
+              },
+              {
+                "start": 51.34,
+                "end": 51.62,
+                "word": " con"
+              },
+              {
+                "start": 51.62,
+                "end": 51.82,
+                "word": " una"
+              },
+              {
+                "start": 51.82,
+                "end": 52.36,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 52.62,
+            "end": 55.1,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 52.62,
+                "end": 52.88,
+                "word": " Hoy"
+              },
+              {
+                "start": 52.88,
+                "end": 53.22,
+                "word": " vamos"
+              },
+              {
+                "start": 53.22,
+                "end": 53.48,
+                "word": " a"
+              },
+              {
+                "start": 53.48,
+                "end": 53.78,
+                "word": " mirar"
+              },
+              {
+                "start": 53.78,
+                "end": 53.96,
+                "word": " las"
+              },
+              {
+                "start": 53.96,
+                "end": 54.3,
+                "word": " cosas"
+              },
+              {
+                "start": 54.3,
+                "end": 54.56,
+                "word": " de"
+              },
+              {
+                "start": 54.56,
+                "end": 54.72,
+                "word": " otra"
+              },
+              {
+                "start": 54.72,
+                "end": 55.1,
+                "word": " manera."
+              }
+            ]
+          },
+          {
+            "start": 55.94,
+            "end": 58.68,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 55.94,
+                "end": 56.54,
+                "word": " Una"
+              },
+              {
+                "start": 56.54,
+                "end": 57.14,
+                "word": " historia"
+              },
+              {
+                "start": 57.14,
+                "end": 57.64,
+                "word": " empieza"
+              },
+              {
+                "start": 57.64,
+                "end": 57.9,
+                "word": " con"
+              },
+              {
+                "start": 57.9,
+                "end": 58.12,
+                "word": " una"
+              },
+              {
+                "start": 58.12,
+                "end": 58.68,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 59.1,
+            "end": 61.42,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 59.1,
+                "end": 59.12,
+                "word": " Hoy"
+              },
+              {
+                "start": 59.12,
+                "end": 59.52,
+                "word": " vamos"
+              },
+              {
+                "start": 59.52,
+                "end": 59.74,
+                "word": " a"
+              },
+              {
+                "start": 59.74,
+                "end": 60.02,
+                "word": " mirar"
+              },
+              {
+                "start": 60.02,
+                "end": 60.28,
+                "word": " las"
+              },
+              {
+                "start": 60.28,
+                "end": 60.56,
+                "word": " cosas"
+              },
+              {
+                "start": 60.56,
+                "end": 60.84,
+                "word": " de"
+              },
+              {
+                "start": 60.84,
+                "end": 61.0,
+                "word": " otra"
+              },
+              {
+                "start": 61.0,
+                "end": 61.42,
+                "word": " manera."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "start": 62.54,
+        "end": 96.16,
+        "text": " Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera.  Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera.  Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera.  Una historia empieza con una pregunta.  Hoy vamos a mirar las cosas de otra manera, una historia empieza con una pregunta,  hoy vamos a mirar las cosas de otra manera, una historia empieza con una pregunta,",
+        "reason": "Corte en límite de segmento de transcripción. Revisa que la idea se entienda sin el contexto anterior.",
+        "segments": [
+          {
+            "start": 62.54,
+            "end": 64.88,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 62.54,
+                "end": 62.76,
+                "word": " Una"
+              },
+              {
+                "start": 62.76,
+                "end": 63.42,
+                "word": " historia"
+              },
+              {
+                "start": 63.42,
+                "end": 63.94,
+                "word": " empieza"
+              },
+              {
+                "start": 63.94,
+                "end": 64.2,
+                "word": " con"
+              },
+              {
+                "start": 64.2,
+                "end": 64.38,
+                "word": " una"
+              },
+              {
+                "start": 64.38,
+                "end": 64.88,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 65.18,
+            "end": 67.6,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 65.18,
+                "end": 65.4,
+                "word": " Hoy"
+              },
+              {
+                "start": 65.4,
+                "end": 65.78,
+                "word": " vamos"
+              },
+              {
+                "start": 65.78,
+                "end": 65.98,
+                "word": " a"
+              },
+              {
+                "start": 65.98,
+                "end": 66.28,
+                "word": " mirar"
+              },
+              {
+                "start": 66.28,
+                "end": 66.46,
+                "word": " las"
+              },
+              {
+                "start": 66.46,
+                "end": 66.82,
+                "word": " cosas"
+              },
+              {
+                "start": 66.82,
+                "end": 67.08,
+                "word": " de"
+              },
+              {
+                "start": 67.08,
+                "end": 67.24,
+                "word": " otra"
+              },
+              {
+                "start": 67.24,
+                "end": 67.6,
+                "word": " manera."
+              }
+            ]
+          },
+          {
+            "start": 68.58,
+            "end": 71.14,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 68.58,
+                "end": 69.04,
+                "word": " Una"
+              },
+              {
+                "start": 69.04,
+                "end": 69.68,
+                "word": " historia"
+              },
+              {
+                "start": 69.68,
+                "end": 70.18,
+                "word": " empieza"
+              },
+              {
+                "start": 70.18,
+                "end": 70.4,
+                "word": " con"
+              },
+              {
+                "start": 70.4,
+                "end": 70.62,
+                "word": " una"
+              },
+              {
+                "start": 70.62,
+                "end": 71.14,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 71.42,
+            "end": 73.82,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 71.42,
+                "end": 71.66,
+                "word": " Hoy"
+              },
+              {
+                "start": 71.66,
+                "end": 71.98,
+                "word": " vamos"
+              },
+              {
+                "start": 71.98,
+                "end": 72.22,
+                "word": " a"
+              },
+              {
+                "start": 72.22,
+                "end": 72.52,
+                "word": " mirar"
+              },
+              {
+                "start": 72.52,
+                "end": 73.12,
+                "word": " las"
+              },
+              {
+                "start": 73.12,
+                "end": 73.18,
+                "word": " cosas"
+              },
+              {
+                "start": 73.18,
+                "end": 73.28,
+                "word": " de"
+              },
+              {
+                "start": 73.28,
+                "end": 73.5,
+                "word": " otra"
+              },
+              {
+                "start": 73.5,
+                "end": 73.82,
+                "word": " manera."
+              }
+            ]
+          },
+          {
+            "start": 77.32,
+            "end": 77.92,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 77.32,
+                "end": 77.92,
+                "word": " Una"
+              },
+              {
+                "start": 77.92,
+                "end": 77.92,
+                "word": " historia"
+              },
+              {
+                "start": 77.92,
+                "end": 77.92,
+                "word": " empieza"
+              },
+              {
+                "start": 77.92,
+                "end": 77.92,
+                "word": " con"
+              },
+              {
+                "start": 77.92,
+                "end": 77.92,
+                "word": " una"
+              },
+              {
+                "start": 77.92,
+                "end": 77.92,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 77.92,
+            "end": 80.32,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 77.92,
+                "end": 77.92,
+                "word": " Hoy"
+              },
+              {
+                "start": 77.92,
+                "end": 78.22,
+                "word": " vamos"
+              },
+              {
+                "start": 78.22,
+                "end": 78.42,
+                "word": " a"
+              },
+              {
+                "start": 78.42,
+                "end": 78.78,
+                "word": " mirar"
+              },
+              {
+                "start": 78.78,
+                "end": 78.88,
+                "word": " las"
+              },
+              {
+                "start": 78.88,
+                "end": 79.3,
+                "word": " cosas"
+              },
+              {
+                "start": 79.3,
+                "end": 79.56,
+                "word": " de"
+              },
+              {
+                "start": 79.56,
+                "end": 79.74,
+                "word": " otra"
+              },
+              {
+                "start": 79.74,
+                "end": 80.32,
+                "word": " manera."
+              }
+            ]
+          },
+          {
+            "start": 80.94,
+            "end": 83.6,
+            "text": " Una historia empieza con una pregunta.",
+            "words": [
+              {
+                "start": 80.94,
+                "end": 81.54,
+                "word": " Una"
+              },
+              {
+                "start": 81.54,
+                "end": 82.14,
+                "word": " historia"
+              },
+              {
+                "start": 82.14,
+                "end": 82.66,
+                "word": " empieza"
+              },
+              {
+                "start": 82.66,
+                "end": 82.88,
+                "word": " con"
+              },
+              {
+                "start": 82.88,
+                "end": 83.12,
+                "word": " una"
+              },
+              {
+                "start": 83.12,
+                "end": 83.6,
+                "word": " pregunta."
+              }
+            ]
+          },
+          {
+            "start": 83.6,
+            "end": 89.86,
+            "text": " Hoy vamos a mirar las cosas de otra manera, una historia empieza con una pregunta,",
+            "words": [
+              {
+                "start": 83.6,
+                "end": 84.12,
+                "word": " Hoy"
+              },
+              {
+                "start": 84.12,
+                "end": 84.5,
+                "word": " vamos"
+              },
+              {
+                "start": 84.5,
+                "end": 84.74,
+                "word": " a"
+              },
+              {
+                "start": 84.74,
+                "end": 85.06,
+                "word": " mirar"
+              },
+              {
+                "start": 85.06,
+                "end": 85.32,
+                "word": " las"
+              },
+              {
+                "start": 85.32,
+                "end": 85.56,
+                "word": " cosas"
+              },
+              {
+                "start": 85.56,
+                "end": 85.84,
+                "word": " de"
+              },
+              {
+                "start": 85.84,
+                "end": 86.0,
+                "word": " otra"
+              },
+              {
+                "start": 86.0,
+                "end": 86.48,
+                "word": " manera,"
+              },
+              {
+                "start": 87.68,
+                "end": 87.78,
+                "word": " una"
+              },
+              {
+                "start": 87.78,
+                "end": 88.4,
+                "word": " historia"
+              },
+              {
+                "start": 88.4,
+                "end": 88.88,
+                "word": " empieza"
+              },
+              {
+                "start": 88.88,
+                "end": 89.16,
+                "word": " con"
+              },
+              {
+                "start": 89.16,
+                "end": 89.38,
+                "word": " una"
+              },
+              {
+                "start": 89.38,
+                "end": 89.86,
+                "word": " pregunta,"
+              }
+            ]
+          },
+          {
+            "start": 90.26,
+            "end": 96.16,
+            "text": " hoy vamos a mirar las cosas de otra manera, una historia empieza con una pregunta,",
+            "words": [
+              {
+                "start": 90.26,
+                "end": 90.4,
+                "word": " hoy"
+              },
+              {
+                "start": 90.4,
+                "end": 90.74,
+                "word": " vamos"
+              },
+              {
+                "start": 90.74,
+                "end": 91.0,
+                "word": " a"
+              },
+              {
+                "start": 91.0,
+                "end": 91.32,
+                "word": " mirar"
+              },
+              {
+                "start": 91.32,
+                "end": 91.58,
+                "word": " las"
+              },
+              {
+                "start": 91.58,
+                "end": 91.8,
+                "word": " cosas"
+              },
+              {
+                "start": 91.8,
+                "end": 92.08,
+                "word": " de"
+              },
+              {
+                "start": 92.08,
+                "end": 92.24,
+                "word": " otra"
+              },
+              {
+                "start": 92.24,
+                "end": 92.84,
+                "word": " manera,"
+              },
+              {
+                "start": 93.88,
+                "end": 94.04,
+                "word": " una"
+              },
+              {
+                "start": 94.04,
+                "end": 94.64,
+                "word": " historia"
+              },
+              {
+                "start": 94.64,
+                "end": 95.16,
+                "word": " empieza"
+              },
+              {
+                "start": 95.16,
+                "end": 95.44,
+                "word": " con"
+              },
+              {
+                "start": 95.44,
+                "end": 95.62,
+                "word": " una"
+              },
+              {
+                "start": 95.62,
+                "end": 96.16,
+                "word": " pregunta,"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "start": 96.16,
+        "end": 98.82,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "reason": "Corte en límite de segmento de transcripción. Revisa que la idea se entienda sin el contexto anterior.",
+        "segments": [
+          {
+            "start": 96.16,
+            "end": 98.82,
+            "text": " Hoy vamos a mirar las cosas de otra manera.",
+            "words": [
+              {
+                "start": 96.16,
+                "end": 96.66,
+                "word": " Hoy"
+              },
+              {
+                "start": 96.66,
+                "end": 97.02,
+                "word": " vamos"
+              },
+              {
+                "start": 97.02,
+                "end": 97.26,
+                "word": " a"
+              },
+              {
+                "start": 97.26,
+                "end": 97.6,
+                "word": " mirar"
+              },
+              {
+                "start": 97.6,
+                "end": 97.82,
+                "word": " las"
+              },
+              {
+                "start": 97.82,
+                "end": 98.08,
+                "word": " cosas"
+              },
+              {
+                "start": 98.08,
+                "end": 98.34,
+                "word": " de"
+              },
+              {
+                "start": 98.34,
+                "end": 98.5,
+                "word": " otra"
+              },
+              {
+                "start": 98.5,
+                "end": 98.82,
+                "word": " manera."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.36,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 0.0,
+            "end": 0.32,
+            "word": " Una"
+          },
+          {
+            "start": 0.32,
+            "end": 0.88,
+            "word": " historia"
+          },
+          {
+            "start": 0.88,
+            "end": 1.38,
+            "word": " empieza"
+          },
+          {
+            "start": 1.38,
+            "end": 1.66,
+            "word": " con"
+          },
+          {
+            "start": 1.66,
+            "end": 1.88,
+            "word": " una"
+          },
+          {
+            "start": 1.88,
+            "end": 2.36,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 2.76,
+        "end": 5.18,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 2.76,
+            "end": 2.86,
+            "word": " Hoy"
+          },
+          {
+            "start": 2.86,
+            "end": 3.26,
+            "word": " vamos"
+          },
+          {
+            "start": 3.26,
+            "end": 3.48,
+            "word": " a"
+          },
+          {
+            "start": 3.48,
+            "end": 3.78,
+            "word": " mirar"
+          },
+          {
+            "start": 3.78,
+            "end": 4.06,
+            "word": " las"
+          },
+          {
+            "start": 4.06,
+            "end": 4.32,
+            "word": " cosas"
+          },
+          {
+            "start": 4.32,
+            "end": 4.58,
+            "word": " de"
+          },
+          {
+            "start": 4.58,
+            "end": 4.74,
+            "word": " otra"
+          },
+          {
+            "start": 4.74,
+            "end": 5.18,
+            "word": " manera."
+          }
+        ]
+      },
+      {
+        "start": 6.24,
+        "end": 8.62,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 6.24,
+            "end": 6.52,
+            "word": " Una"
+          },
+          {
+            "start": 6.52,
+            "end": 7.16,
+            "word": " historia"
+          },
+          {
+            "start": 7.16,
+            "end": 7.68,
+            "word": " empieza"
+          },
+          {
+            "start": 7.68,
+            "end": 7.94,
+            "word": " con"
+          },
+          {
+            "start": 7.94,
+            "end": 8.12,
+            "word": " una"
+          },
+          {
+            "start": 8.12,
+            "end": 8.62,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 8.92,
+        "end": 11.36,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 8.92,
+            "end": 9.12,
+            "word": " Hoy"
+          },
+          {
+            "start": 9.12,
+            "end": 9.5,
+            "word": " vamos"
+          },
+          {
+            "start": 9.5,
+            "end": 9.72,
+            "word": " a"
+          },
+          {
+            "start": 9.72,
+            "end": 10.02,
+            "word": " mirar"
+          },
+          {
+            "start": 10.02,
+            "end": 10.22,
+            "word": " las"
+          },
+          {
+            "start": 10.22,
+            "end": 10.56,
+            "word": " cosas"
+          },
+          {
+            "start": 10.56,
+            "end": 10.82,
+            "word": " de"
+          },
+          {
+            "start": 10.82,
+            "end": 11.0,
+            "word": " otra"
+          },
+          {
+            "start": 11.0,
+            "end": 11.36,
+            "word": " manera."
+          }
+        ]
+      },
+      {
+        "start": 12.26,
+        "end": 14.86,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 12.26,
+            "end": 12.78,
+            "word": " Una"
+          },
+          {
+            "start": 12.78,
+            "end": 13.42,
+            "word": " historia"
+          },
+          {
+            "start": 13.42,
+            "end": 13.94,
+            "word": " empieza"
+          },
+          {
+            "start": 13.94,
+            "end": 14.18,
+            "word": " con"
+          },
+          {
+            "start": 14.18,
+            "end": 14.38,
+            "word": " una"
+          },
+          {
+            "start": 14.38,
+            "end": 14.86,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 15.16,
+        "end": 17.6,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 15.16,
+            "end": 15.4,
+            "word": " Hoy"
+          },
+          {
+            "start": 15.4,
+            "end": 15.74,
+            "word": " vamos"
+          },
+          {
+            "start": 15.74,
+            "end": 15.98,
+            "word": " a"
+          },
+          {
+            "start": 15.98,
+            "end": 16.28,
+            "word": " mirar"
+          },
+          {
+            "start": 16.28,
+            "end": 16.48,
+            "word": " las"
+          },
+          {
+            "start": 16.48,
+            "end": 16.8,
+            "word": " cosas"
+          },
+          {
+            "start": 16.8,
+            "end": 17.06,
+            "word": " de"
+          },
+          {
+            "start": 17.06,
+            "end": 17.24,
+            "word": " otra"
+          },
+          {
+            "start": 17.24,
+            "end": 17.6,
+            "word": " manera."
+          }
+        ]
+      },
+      {
+        "start": 18.46,
+        "end": 22.64,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 18.46,
+            "end": 19.06,
+            "word": " Una"
+          },
+          {
+            "start": 19.06,
+            "end": 19.66,
+            "word": " historia"
+          },
+          {
+            "start": 19.66,
+            "end": 22.52,
+            "word": " empieza"
+          },
+          {
+            "start": 22.52,
+            "end": 22.64,
+            "word": " con"
+          },
+          {
+            "start": 22.64,
+            "end": 22.64,
+            "word": " una"
+          },
+          {
+            "start": 22.64,
+            "end": 22.64,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 22.64,
+        "end": 23.88,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 22.64,
+            "end": 22.64,
+            "word": " Hoy"
+          },
+          {
+            "start": 22.64,
+            "end": 22.64,
+            "word": " vamos"
+          },
+          {
+            "start": 22.64,
+            "end": 22.64,
+            "word": " a"
+          },
+          {
+            "start": 22.64,
+            "end": 22.64,
+            "word": " mirar"
+          },
+          {
+            "start": 22.64,
+            "end": 22.68,
+            "word": " las"
+          },
+          {
+            "start": 22.68,
+            "end": 23.08,
+            "word": " cosas"
+          },
+          {
+            "start": 23.08,
+            "end": 23.28,
+            "word": " de"
+          },
+          {
+            "start": 23.28,
+            "end": 23.46,
+            "word": " otra"
+          },
+          {
+            "start": 23.46,
+            "end": 23.88,
+            "word": " manera."
+          }
+        ]
+      },
+      {
+        "start": 24.68,
+        "end": 27.38,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 24.68,
+            "end": 25.28,
+            "word": " Una"
+          },
+          {
+            "start": 25.28,
+            "end": 25.86,
+            "word": " historia"
+          },
+          {
+            "start": 25.86,
+            "end": 26.42,
+            "word": " empieza"
+          },
+          {
+            "start": 26.42,
+            "end": 26.62,
+            "word": " con"
+          },
+          {
+            "start": 26.62,
+            "end": 26.86,
+            "word": " una"
+          },
+          {
+            "start": 26.86,
+            "end": 27.38,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 27.38,
+        "end": 30.28,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 27.38,
+            "end": 27.86,
+            "word": " Hoy"
+          },
+          {
+            "start": 27.86,
+            "end": 28.26,
+            "word": " vamos"
+          },
+          {
+            "start": 28.26,
+            "end": 28.48,
+            "word": " a"
+          },
+          {
+            "start": 28.48,
+            "end": 28.8,
+            "word": " mirar"
+          },
+          {
+            "start": 28.8,
+            "end": 29.08,
+            "word": " las"
+          },
+          {
+            "start": 29.08,
+            "end": 29.32,
+            "word": " cosas"
+          },
+          {
+            "start": 29.32,
+            "end": 29.58,
+            "word": " de"
+          },
+          {
+            "start": 29.58,
+            "end": 29.74,
+            "word": " otra"
+          },
+          {
+            "start": 29.74,
+            "end": 30.28,
+            "word": " manera."
+          }
+        ]
+      },
+      {
+        "start": 31.4,
+        "end": 33.6,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 31.4,
+            "end": 31.52,
+            "word": " Una"
+          },
+          {
+            "start": 31.52,
+            "end": 32.14,
+            "word": " historia"
+          },
+          {
+            "start": 32.14,
+            "end": 32.62,
+            "word": " empieza"
+          },
+          {
+            "start": 32.62,
+            "end": 32.9,
+            "word": " con"
+          },
+          {
+            "start": 32.9,
+            "end": 33.12,
+            "word": " una"
+          },
+          {
+            "start": 33.12,
+            "end": 33.6,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 34.0,
+        "end": 36.34,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 34.0,
+            "end": 34.1,
+            "word": " Hoy"
+          },
+          {
+            "start": 34.1,
+            "end": 34.5,
+            "word": " vamos"
+          },
+          {
+            "start": 34.5,
+            "end": 34.74,
+            "word": " a"
+          },
+          {
+            "start": 34.74,
+            "end": 35.04,
+            "word": " mirar"
+          },
+          {
+            "start": 35.04,
+            "end": 35.32,
+            "word": " las"
+          },
+          {
+            "start": 35.32,
+            "end": 35.54,
+            "word": " cosas"
+          },
+          {
+            "start": 35.54,
+            "end": 35.82,
+            "word": " de"
+          },
+          {
+            "start": 35.82,
+            "end": 36.0,
+            "word": " otra"
+          },
+          {
+            "start": 36.0,
+            "end": 36.34,
+            "word": " manera."
+          }
+        ]
+      },
+      {
+        "start": 37.4,
+        "end": 39.86,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 37.4,
+            "end": 37.78,
+            "word": " Una"
+          },
+          {
+            "start": 37.78,
+            "end": 38.4,
+            "word": " historia"
+          },
+          {
+            "start": 38.4,
+            "end": 38.92,
+            "word": " empieza"
+          },
+          {
+            "start": 38.92,
+            "end": 39.18,
+            "word": " con"
+          },
+          {
+            "start": 39.18,
+            "end": 39.36,
+            "word": " una"
+          },
+          {
+            "start": 39.36,
+            "end": 39.86,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 40.18,
+        "end": 42.62,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 40.18,
+            "end": 40.38,
+            "word": " Hoy"
+          },
+          {
+            "start": 40.38,
+            "end": 40.74,
+            "word": " vamos"
+          },
+          {
+            "start": 40.74,
+            "end": 40.98,
+            "word": " a"
+          },
+          {
+            "start": 40.98,
+            "end": 41.28,
+            "word": " mirar"
+          },
+          {
+            "start": 41.28,
+            "end": 41.5,
+            "word": " las"
+          },
+          {
+            "start": 41.5,
+            "end": 41.84,
+            "word": " cosas"
+          },
+          {
+            "start": 41.84,
+            "end": 42.06,
+            "word": " de"
+          },
+          {
+            "start": 42.06,
+            "end": 42.24,
+            "word": " otra"
+          },
+          {
+            "start": 42.24,
+            "end": 42.62,
+            "word": " manera."
+          }
+        ]
+      },
+      {
+        "start": 43.44,
+        "end": 46.04,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 43.44,
+            "end": 44.02,
+            "word": " Una"
+          },
+          {
+            "start": 44.02,
+            "end": 44.66,
+            "word": " historia"
+          },
+          {
+            "start": 44.66,
+            "end": 45.18,
+            "word": " empieza"
+          },
+          {
+            "start": 45.18,
+            "end": 45.42,
+            "word": " con"
+          },
+          {
+            "start": 45.42,
+            "end": 45.62,
+            "word": " una"
+          },
+          {
+            "start": 45.62,
+            "end": 46.04,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 46.42,
+        "end": 48.86,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 46.42,
+            "end": 46.64,
+            "word": " Hoy"
+          },
+          {
+            "start": 46.64,
+            "end": 46.98,
+            "word": " vamos"
+          },
+          {
+            "start": 46.98,
+            "end": 47.22,
+            "word": " a"
+          },
+          {
+            "start": 47.22,
+            "end": 47.54,
+            "word": " mirar"
+          },
+          {
+            "start": 47.54,
+            "end": 48.12,
+            "word": " las"
+          },
+          {
+            "start": 48.12,
+            "end": 48.12,
+            "word": " cosas"
+          },
+          {
+            "start": 48.12,
+            "end": 48.28,
+            "word": " de"
+          },
+          {
+            "start": 48.28,
+            "end": 48.48,
+            "word": " otra"
+          },
+          {
+            "start": 48.48,
+            "end": 48.86,
+            "word": " manera."
+          }
+        ]
+      },
+      {
+        "start": 49.82,
+        "end": 52.36,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 49.82,
+            "end": 50.28,
+            "word": " Una"
+          },
+          {
+            "start": 50.28,
+            "end": 50.84,
+            "word": " historia"
+          },
+          {
+            "start": 50.84,
+            "end": 51.34,
+            "word": " empieza"
+          },
+          {
+            "start": 51.34,
+            "end": 51.62,
+            "word": " con"
+          },
+          {
+            "start": 51.62,
+            "end": 51.82,
+            "word": " una"
+          },
+          {
+            "start": 51.82,
+            "end": 52.36,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 52.62,
+        "end": 55.1,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 52.62,
+            "end": 52.88,
+            "word": " Hoy"
+          },
+          {
+            "start": 52.88,
+            "end": 53.22,
+            "word": " vamos"
+          },
+          {
+            "start": 53.22,
+            "end": 53.48,
+            "word": " a"
+          },
+          {
+            "start": 53.48,
+            "end": 53.78,
+            "word": " mirar"
+          },
+          {
+            "start": 53.78,
+            "end": 53.96,
+            "word": " las"
+          },
+          {
+            "start": 53.96,
+            "end": 54.3,
+            "word": " cosas"
+          },
+          {
+            "start": 54.3,
+            "end": 54.56,
+            "word": " de"
+          },
+          {
+            "start": 54.56,
+            "end": 54.72,
+            "word": " otra"
+          },
+          {
+            "start": 54.72,
+            "end": 55.1,
+            "word": " manera."
+          }
+        ]
+      },
+      {
+        "start": 55.94,
+        "end": 58.68,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 55.94,
+            "end": 56.54,
+            "word": " Una"
+          },
+          {
+            "start": 56.54,
+            "end": 57.14,
+            "word": " historia"
+          },
+          {
+            "start": 57.14,
+            "end": 57.64,
+            "word": " empieza"
+          },
+          {
+            "start": 57.64,
+            "end": 57.9,
+            "word": " con"
+          },
+          {
+            "start": 57.9,
+            "end": 58.12,
+            "word": " una"
+          },
+          {
+            "start": 58.12,
+            "end": 58.68,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 59.1,
+        "end": 61.42,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 59.1,
+            "end": 59.12,
+            "word": " Hoy"
+          },
+          {
+            "start": 59.12,
+            "end": 59.52,
+            "word": " vamos"
+          },
+          {
+            "start": 59.52,
+            "end": 59.74,
+            "word": " a"
+          },
+          {
+            "start": 59.74,
+            "end": 60.02,
+            "word": " mirar"
+          },
+          {
+            "start": 60.02,
+            "end": 60.28,
+            "word": " las"
+          },
+          {
+            "start": 60.28,
+            "end": 60.56,
+            "word": " cosas"
+          },
+          {
+            "start": 60.56,
+            "end": 60.84,
+            "word": " de"
+          },
+          {
+            "start": 60.84,
+            "end": 61.0,
+            "word": " otra"
+          },
+          {
+            "start": 61.0,
+            "end": 61.42,
+            "word": " manera."
+          }
+        ]
+      },
+      {
+        "start": 62.54,
+        "end": 64.88,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 62.54,
+            "end": 62.76,
+            "word": " Una"
+          },
+          {
+            "start": 62.76,
+            "end": 63.42,
+            "word": " historia"
+          },
+          {
+            "start": 63.42,
+            "end": 63.94,
+            "word": " empieza"
+          },
+          {
+            "start": 63.94,
+            "end": 64.2,
+            "word": " con"
+          },
+          {
+            "start": 64.2,
+            "end": 64.38,
+            "word": " una"
+          },
+          {
+            "start": 64.38,
+            "end": 64.88,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 65.18,
+        "end": 67.6,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 65.18,
+            "end": 65.4,
+            "word": " Hoy"
+          },
+          {
+            "start": 65.4,
+            "end": 65.78,
+            "word": " vamos"
+          },
+          {
+            "start": 65.78,
+            "end": 65.98,
+            "word": " a"
+          },
+          {
+            "start": 65.98,
+            "end": 66.28,
+            "word": " mirar"
+          },
+          {
+            "start": 66.28,
+            "end": 66.46,
+            "word": " las"
+          },
+          {
+            "start": 66.46,
+            "end": 66.82,
+            "word": " cosas"
+          },
+          {
+            "start": 66.82,
+            "end": 67.08,
+            "word": " de"
+          },
+          {
+            "start": 67.08,
+            "end": 67.24,
+            "word": " otra"
+          },
+          {
+            "start": 67.24,
+            "end": 67.6,
+            "word": " manera."
+          }
+        ]
+      },
+      {
+        "start": 68.58,
+        "end": 71.14,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 68.58,
+            "end": 69.04,
+            "word": " Una"
+          },
+          {
+            "start": 69.04,
+            "end": 69.68,
+            "word": " historia"
+          },
+          {
+            "start": 69.68,
+            "end": 70.18,
+            "word": " empieza"
+          },
+          {
+            "start": 70.18,
+            "end": 70.4,
+            "word": " con"
+          },
+          {
+            "start": 70.4,
+            "end": 70.62,
+            "word": " una"
+          },
+          {
+            "start": 70.62,
+            "end": 71.14,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 71.42,
+        "end": 73.82,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 71.42,
+            "end": 71.66,
+            "word": " Hoy"
+          },
+          {
+            "start": 71.66,
+            "end": 71.98,
+            "word": " vamos"
+          },
+          {
+            "start": 71.98,
+            "end": 72.22,
+            "word": " a"
+          },
+          {
+            "start": 72.22,
+            "end": 72.52,
+            "word": " mirar"
+          },
+          {
+            "start": 72.52,
+            "end": 73.12,
+            "word": " las"
+          },
+          {
+            "start": 73.12,
+            "end": 73.18,
+            "word": " cosas"
+          },
+          {
+            "start": 73.18,
+            "end": 73.28,
+            "word": " de"
+          },
+          {
+            "start": 73.28,
+            "end": 73.5,
+            "word": " otra"
+          },
+          {
+            "start": 73.5,
+            "end": 73.82,
+            "word": " manera."
+          }
+        ]
+      },
+      {
+        "start": 77.32,
+        "end": 77.92,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 77.32,
+            "end": 77.92,
+            "word": " Una"
+          },
+          {
+            "start": 77.92,
+            "end": 77.92,
+            "word": " historia"
+          },
+          {
+            "start": 77.92,
+            "end": 77.92,
+            "word": " empieza"
+          },
+          {
+            "start": 77.92,
+            "end": 77.92,
+            "word": " con"
+          },
+          {
+            "start": 77.92,
+            "end": 77.92,
+            "word": " una"
+          },
+          {
+            "start": 77.92,
+            "end": 77.92,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 77.92,
+        "end": 80.32,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 77.92,
+            "end": 77.92,
+            "word": " Hoy"
+          },
+          {
+            "start": 77.92,
+            "end": 78.22,
+            "word": " vamos"
+          },
+          {
+            "start": 78.22,
+            "end": 78.42,
+            "word": " a"
+          },
+          {
+            "start": 78.42,
+            "end": 78.78,
+            "word": " mirar"
+          },
+          {
+            "start": 78.78,
+            "end": 78.88,
+            "word": " las"
+          },
+          {
+            "start": 78.88,
+            "end": 79.3,
+            "word": " cosas"
+          },
+          {
+            "start": 79.3,
+            "end": 79.56,
+            "word": " de"
+          },
+          {
+            "start": 79.56,
+            "end": 79.74,
+            "word": " otra"
+          },
+          {
+            "start": 79.74,
+            "end": 80.32,
+            "word": " manera."
+          }
+        ]
+      },
+      {
+        "start": 80.94,
+        "end": 83.6,
+        "text": " Una historia empieza con una pregunta.",
+        "words": [
+          {
+            "start": 80.94,
+            "end": 81.54,
+            "word": " Una"
+          },
+          {
+            "start": 81.54,
+            "end": 82.14,
+            "word": " historia"
+          },
+          {
+            "start": 82.14,
+            "end": 82.66,
+            "word": " empieza"
+          },
+          {
+            "start": 82.66,
+            "end": 82.88,
+            "word": " con"
+          },
+          {
+            "start": 82.88,
+            "end": 83.12,
+            "word": " una"
+          },
+          {
+            "start": 83.12,
+            "end": 83.6,
+            "word": " pregunta."
+          }
+        ]
+      },
+      {
+        "start": 83.6,
+        "end": 89.86,
+        "text": " Hoy vamos a mirar las cosas de otra manera, una historia empieza con una pregunta,",
+        "words": [
+          {
+            "start": 83.6,
+            "end": 84.12,
+            "word": " Hoy"
+          },
+          {
+            "start": 84.12,
+            "end": 84.5,
+            "word": " vamos"
+          },
+          {
+            "start": 84.5,
+            "end": 84.74,
+            "word": " a"
+          },
+          {
+            "start": 84.74,
+            "end": 85.06,
+            "word": " mirar"
+          },
+          {
+            "start": 85.06,
+            "end": 85.32,
+            "word": " las"
+          },
+          {
+            "start": 85.32,
+            "end": 85.56,
+            "word": " cosas"
+          },
+          {
+            "start": 85.56,
+            "end": 85.84,
+            "word": " de"
+          },
+          {
+            "start": 85.84,
+            "end": 86.0,
+            "word": " otra"
+          },
+          {
+            "start": 86.0,
+            "end": 86.48,
+            "word": " manera,"
+          },
+          {
+            "start": 87.68,
+            "end": 87.78,
+            "word": " una"
+          },
+          {
+            "start": 87.78,
+            "end": 88.4,
+            "word": " historia"
+          },
+          {
+            "start": 88.4,
+            "end": 88.88,
+            "word": " empieza"
+          },
+          {
+            "start": 88.88,
+            "end": 89.16,
+            "word": " con"
+          },
+          {
+            "start": 89.16,
+            "end": 89.38,
+            "word": " una"
+          },
+          {
+            "start": 89.38,
+            "end": 89.86,
+            "word": " pregunta,"
+          }
+        ]
+      },
+      {
+        "start": 90.26,
+        "end": 96.16,
+        "text": " hoy vamos a mirar las cosas de otra manera, una historia empieza con una pregunta,",
+        "words": [
+          {
+            "start": 90.26,
+            "end": 90.4,
+            "word": " hoy"
+          },
+          {
+            "start": 90.4,
+            "end": 90.74,
+            "word": " vamos"
+          },
+          {
+            "start": 90.74,
+            "end": 91.0,
+            "word": " a"
+          },
+          {
+            "start": 91.0,
+            "end": 91.32,
+            "word": " mirar"
+          },
+          {
+            "start": 91.32,
+            "end": 91.58,
+            "word": " las"
+          },
+          {
+            "start": 91.58,
+            "end": 91.8,
+            "word": " cosas"
+          },
+          {
+            "start": 91.8,
+            "end": 92.08,
+            "word": " de"
+          },
+          {
+            "start": 92.08,
+            "end": 92.24,
+            "word": " otra"
+          },
+          {
+            "start": 92.24,
+            "end": 92.84,
+            "word": " manera,"
+          },
+          {
+            "start": 93.88,
+            "end": 94.04,
+            "word": " una"
+          },
+          {
+            "start": 94.04,
+            "end": 94.64,
+            "word": " historia"
+          },
+          {
+            "start": 94.64,
+            "end": 95.16,
+            "word": " empieza"
+          },
+          {
+            "start": 95.16,
+            "end": 95.44,
+            "word": " con"
+          },
+          {
+            "start": 95.44,
+            "end": 95.62,
+            "word": " una"
+          },
+          {
+            "start": 95.62,
+            "end": 96.16,
+            "word": " pregunta,"
+          }
+        ]
+      },
+      {
+        "start": 96.16,
+        "end": 98.82,
+        "text": " Hoy vamos a mirar las cosas de otra manera.",
+        "words": [
+          {
+            "start": 96.16,
+            "end": 96.66,
+            "word": " Hoy"
+          },
+          {
+            "start": 96.66,
+            "end": 97.02,
+            "word": " vamos"
+          },
+          {
+            "start": 97.02,
+            "end": 97.26,
+            "word": " a"
+          },
+          {
+            "start": 97.26,
+            "end": 97.6,
+            "word": " mirar"
+          },
+          {
+            "start": 97.6,
+            "end": 97.82,
+            "word": " las"
+          },
+          {
+            "start": 97.82,
+            "end": 98.08,
+            "word": " cosas"
+          },
+          {
+            "start": 98.08,
+            "end": 98.34,
+            "word": " de"
+          },
+          {
+            "start": 98.34,
+            "end": 98.5,
+            "word": " otra"
+          },
+          {
+            "start": 98.5,
+            "end": 98.82,
+            "word": " manera."
+          }
+        ]
+      }
+    ],
+    "asset": "test-long.mp4",
+    "notice": "Selección heurística por segmentos, sin predicción de rendimiento. El número depende de la duración disponible."
+  }
+}

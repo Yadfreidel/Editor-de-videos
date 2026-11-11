@@ -1,0 +1,11 @@
+{
+  "twoClientsIsolated": true,
+  "mediaAndWritesProtected": true,
+  "referenceBypassBlocked": true,
+  "timestamp": 1.25,
+  "versionApprovalIsolated": true,
+  "expiredAndRevokedRejected": true,
+  "collaboratorScopedAndRevocable": true,
+  "remoteUpload": false,
+  "remoteRealEnvironmentTested": false
+}

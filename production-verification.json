@@ -1,0 +1,31 @@
+[
+  {
+    "check": "Incremental migrations: old/new databases and full transaction rollback",
+    "passed": true
+  },
+  {
+    "check": "Legacy auxiliary jobs inherit private project scopes without changing projects",
+    "passed": true
+  },
+  {
+    "check": "Migration error is recoverable and fails closed before serving private data",
+    "passed": true
+  },
+  {
+    "check": "Real brand preview uses final renderer, including subtitle colour pixels",
+    "passed": true
+  },
+  {
+    "check": "One transcript, non-overlapping candidates, regeneration preserves edits and brand snapshot",
+    "passed": true
+  },
+  {
+    "check": "Two approved exports in ZIP, discarded excluded, duplicate request reuses jobs",
+    "passed": true,
+    "zip": "C:\\Users\\User\\edictor de videos\\workspace\\production-verification\\exports\\lote-24ed6c4b-57070cd7aeea468a96762cc59e59dadc.zip"
+  },
+  {
+    "check": "Partial failure preserves successful output; retry reuses healthy clip",
+    "passed": true
+  }
+]

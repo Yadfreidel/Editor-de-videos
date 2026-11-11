@@ -1,0 +1,53 @@
+{
+  "video": "/media/exports/519304aa-DEMO-bb169a.mp4",
+  "srt": "/media/exports/519304aa-DEMO-bb169a.srt",
+  "cover": "/media/exports/519304aa-DEMO-bb169a.png",
+  "text": "/media/exports/519304aa-DEMO-bb169a.txt",
+  "credits": "/media/exports/519304aa-DEMO-bb169a.credits.json",
+  "duration": 20.0,
+  "scenes": [
+    {
+      "id": "f2711bbafcc34a39b77a9f400391d3fe",
+      "text": "A veces, una pausa es el primer paso para volver a concentrarte.",
+      "overlay": "Una pausa también es progreso",
+      "duration": 6.0,
+      "color": "#173c38",
+      "asset": "",
+      "audio": "",
+      "originalAudio": false,
+      "start": 0,
+      "zoom": 1,
+      "x": 0.5,
+      "verified": true
+    },
+    {
+      "id": "9fba242feb824f36a60dc034fcbe3031",
+      "text": "Deja la pantalla un momento. Mira a tu alrededor y respira a tu ritmo.",
+      "overlay": "Baja el ritmo. Vuelve a mirar.",
+      "duration": 7.0,
+      "color": "#4a392a",
+      "asset": "",
+      "audio": "",
+      "originalAudio": false,
+      "start": 0,
+      "zoom": 1,
+      "x": 0.5,
+      "verified": true
+    },
+    {
+      "id": "bac54b065e194f81a8e7d2f6e945f27a",
+      "text": "Elige una sola tarea pequeña para continuar. Esta es una invitación, no una regla.",
+      "overlay": "Un paso pequeño. Una nueva perspectiva.",
+      "duration": 7.0,
+      "color": "#263d50",
+      "asset": "",
+      "audio": "",
+      "originalAudio": false,
+      "start": 0,
+      "zoom": 1,
+      "x": 0.5,
+      "verified": true
+    }
+  ],
+  "projectId": "519304aa7e79427c958a25a826fc727d"
+}

@@ -1,0 +1,9 @@
+{
+  "desktop": "1440x1100",
+  "mobile": "390x844",
+  "create": true,
+  "edit": true,
+  "exportDialog": true,
+  "horizontalOverflow": false,
+  "pageErrors": []
+}

@@ -1,0 +1,7 @@
+{
+  "realServerRestart": true,
+  "cancelledBatchPreservesEdits": true,
+  "completedMediaPreserved": true,
+  "interruptedQueueRecoverable": true,
+  "retryAfterRestart": true
+}

@@ -1,0 +1,13 @@
+{
+  "actualWhisperInvocations": 1,
+  "firstBatchClips": 3,
+  "regenerationReusesTranscript": true,
+  "anotherBatchReusesTranscript": true,
+  "twoApprovedRealSpeechExports": true,
+  "discardedExcludedFromZip": true,
+  "wordHighlightsRendered": true,
+  "archive": "/media/exports/lote-bd25702b-538d07728228426dac2a02a036170f92.zip",
+  "model": "tiny",
+  "device": "cpu",
+  "workspace": "C:\\Users\\User\\edictor de videos\\workspace\\whisper-batch-verification\\331436f27dcf4c3da81f0065305d3ba7"
+}

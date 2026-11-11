@@ -1,0 +1,20 @@
+{
+  "originalProjectId": "519304aa7e79427c958a25a826fc727d",
+  "sourceUnchanged": true,
+  "unknownFieldsPreserved": true,
+  "copy": "C:\\Users\\User\\edictor de videos\\workspace\\compatibility-copies\\b91b0384c1fc46ac91847bd30c3e633f",
+  "exports": [
+    {
+      "resolution": 720,
+      "skewSeconds": 0.03414583333333354,
+      "audioPeak": 0.7074928283691406,
+      "file": "C:\\Users\\User\\edictor de videos\\workspace\\compatibility-copies\\b91b0384c1fc46ac91847bd30c3e633f\\exports\\519304aa-A-fe8074.mp4"
+    },
+    {
+      "resolution": 1080,
+      "skewSeconds": 0.009437499999999766,
+      "audioPeak": 0.707950234413147,
+      "file": "C:\\Users\\User\\edictor de videos\\workspace\\compatibility-copies\\b91b0384c1fc46ac91847bd30c3e633f\\exports\\519304aa-A-0a7a81.mp4"
+    }
+  ]
+}

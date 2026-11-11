@@ -1,0 +1,29 @@
+{
+  "cases": [
+    {
+      "case": "one",
+      "tracks": 1,
+      "samples": 8
+    },
+    {
+      "case": "two",
+      "tracks": 2,
+      "samples": 8
+    },
+    {
+      "case": "none",
+      "tracks": 0,
+      "samples": 8
+    },
+    {
+      "case": "occlusion",
+      "tracks": 1,
+      "samples": 8
+    }
+  ],
+  "manualChangeReachesMp4": true,
+  "allThreeModesRendered": true,
+  "occlusionHoldsCrop": true,
+  "speakerIdentification": false,
+  "fixture": "NASA Eileen Collins, public domain; skimage.data.astronaut"
+}

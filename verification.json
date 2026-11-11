@@ -1,0 +1,67 @@
+[
+  {
+    "check": "Autosave representation persists edited overlay",
+    "status": "passed"
+  },
+  {
+    "check": "Script to narrated MP4 with subtitles",
+    "status": "passed",
+    "resolution": "720x1280",
+    "video_seconds": 6.133333333333334,
+    "audio_seconds": 6.1546666666666665,
+    "audio_peak": 0.7110664248466492
+  },
+  {
+    "check": "SRT, cover, publication and credits",
+    "status": "passed",
+    "artifacts": [
+      "/media/exports/e4be5c0f-A-8a093e.mp4",
+      "/media/exports/e4be5c0f-A-8a093e.srt",
+      "/media/exports/e4be5c0f-A-8a093e.png",
+      "/media/exports/e4be5c0f-A-8a093e.txt",
+      "/media/exports/e4be5c0f-A-8a093e.credits.json"
+    ]
+  },
+  {
+    "check": "1080p render",
+    "status": "passed",
+    "resolution": "1080x1920",
+    "video_seconds": 2.0,
+    "audio_seconds": 2.021333333333333,
+    "audio_peak": 0.7025578022003174
+  },
+  {
+    "check": "Long video with timestamped transcript to clips",
+    "status": "passed",
+    "clips": 4
+  },
+  {
+    "check": "Trimmed clip retains source audio",
+    "status": "passed",
+    "resolution": "720x1280",
+    "video_seconds": 2.966666666666667,
+    "audio_seconds": 3.021333333333333,
+    "audio_peak": 0.7073903679847717
+  },
+  {
+    "check": "Private, reserved, invalid and inaccessible links rejected",
+    "status": "passed"
+  },
+  {
+    "check": "Unconfigured model gives manual-script fallback",
+    "status": "passed"
+  },
+  {
+    "check": "Live RSS, no fabricated trend signals",
+    "status": "passed",
+    "items": 33
+  },
+  {
+    "check": "Render cancellation stays cancelled",
+    "status": "passed"
+  },
+  {
+    "check": "Missing metrics remain null",
+    "status": "passed"
+  }
+]
