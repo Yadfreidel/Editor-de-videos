@@ -1,0 +1,28 @@
+# Prepared template only: creating this service requires a connected account and budget approval.
+services:
+  - type: web
+    name: clip-studio-private
+    runtime: docker
+    plan: standard
+    region: virginia
+    numInstances: 1
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeployTrigger: "off"
+    disk:
+      name: clip-studio-data
+      mountPath: /data
+      sizeGB: 10
+    envVars:
+      - key: CLIP_REMOTE
+        value: "true"
+      - key: CLIP_OWNER_KEY
+        generateValue: true
+      - key: CLIP_WORKSPACE
+        value: /data
+      - key: CLIP_FRONTEND_DIR
+        value: /app/frontend
+      - key: CLIP_RENDER_THREADS
+        value: "2"
+      - key: CLIP_MAX_UPLOAD_MB
+        value: "256"

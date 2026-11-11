@@ -1,0 +1,34 @@
+name: Validar servidor de video en contenedor
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - Dockerfile
+      - .dockerignore
+      - backend/**
+      - app/**
+      - scripts/cloud_*.py
+      - .github/workflows/cloud-container.yml
+permissions:
+  contents: read
+jobs:
+  container:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compilar imagen Linux sin datos locales
+        run: docker build -t clip-studio-cloud .
+      - name: Probar privacidad, modelos y exportación
+        shell: bash
+        run: |
+          ACCESS_KEY=$(openssl rand -hex 32)
+          echo "::add-mask::$ACCESS_KEY"
+          docker run -d --name clip-cloud --memory=2g --cpus=1 -e CLIP_OWNER_KEY="$ACCESS_KEY" -v "$RUNNER_TEMP/clip-data:/data" clip-studio-cloud
+          docker exec clip-cloud python scripts/cloud_container_smoke.py
+          docker restart clip-cloud
+          docker exec clip-cloud python scripts/cloud_container_smoke.py --after-restart
+      - name: Mostrar diagnóstico si falla
+        if: failure()
+        run: docker logs clip-cloud 2>/dev/null || true

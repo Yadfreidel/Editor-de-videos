@@ -121,3 +121,5 @@ Playwright crea un storyboard, edita texto, abre exportación y comprueba ausenc
 ## Alcance pendiente
 
 Quedan pendientes catálogo visual externo con filtros de derechos, generación local de imágenes, publicación vía APIs oficiales, evaluación editorial semántica avanzada y paquetes de tipografías multiplataforma. Las tarjetas de estilo no son paquetes de animación completos. El seguimiento local de rostros, pantalla dividida, lotes, perfiles y revisión privada local ya están implementados en la ampliación. No hay servicio remoto de revisión desplegado, sincronización cloud ni garantía de resultados en plataformas. Ollama, CUDA y otras voces requieren instalación/configuración y pruebas propias. La detección de rostros no identifica al hablante.
+
+Despliegue del servidor privado: [guía de internet](docs/CLOUD-DEPLOYMENT.md).

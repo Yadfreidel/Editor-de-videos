@@ -22,7 +22,7 @@
   {
     "check": "Two approved exports in ZIP, discarded excluded, duplicate request reuses jobs",
     "passed": true,
-    "zip": "C:\\Users\\User\\edictor de videos\\workspace\\production-verification\\exports\\lote-24ed6c4b-57070cd7aeea468a96762cc59e59dadc.zip"
+    "zip": "C:\\Users\\User\\edictor de videos\\workspace\\production-verification\\exports\\lote-52b8f89b-ee784bc6b6414dbe8b82ff22a18714ec.zip"
   },
   {
     "check": "Partial failure preserves successful output; retry reuses healthy clip",

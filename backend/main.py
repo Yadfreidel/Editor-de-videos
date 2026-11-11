@@ -22,7 +22,7 @@ from xml.etree import ElementTree
 import httpx
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException, UploadFile, File, Request
+from fastapi import FastAPI, HTTPException, UploadFile, File, Request, Form
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, ConfigDict
 from PIL import Image, ImageDraw, ImageFont
@@ -139,9 +139,10 @@ def save_brand(req: Brand): return put('settings',{'id':'brand',**req.model_dump
 @app.get('/api/health')
 def health():
     import importlib.util
-    return {'local': True, 'ffmpeg': bool(ffmpeg()), 'piper': bool(os.getenv('PIPER_MODEL')) and importlib.util.find_spec('piper') is not None,
+    remote=os.getenv('CLIP_REMOTE','false').lower()=='true'
+    return {'local': not remote,'remote':remote,'applicationUrl':os.getenv('CLIP_PUBLIC_URL') or os.getenv('RENDER_EXTERNAL_URL',''), 'ffmpeg': bool(ffmpeg()), 'piper': bool(os.getenv('PIPER_MODEL')) and importlib.util.find_spec('piper') is not None,
             'ollama': bool(os.getenv('OLLAMA_MODEL')), 'whisper': importlib.util.find_spec('faster_whisper') is not None,
-            'external': os.getenv('EXTERNAL_ENABLED', 'true') == 'true', 'workspace': str(ROOT)}
+            'external': os.getenv('EXTERNAL_ENABLED', 'true') == 'true', 'workspace': 'Almacenamiento privado del servidor' if remote else str(ROOT)}
 @app.get('/api/projects')
 def projects(request:Request): return visible_records(request,all_rows('projects'))
 @app.get('/api/projects/{key}')
@@ -178,7 +179,12 @@ def save_project(p):
     data = p.model_dump(); data['updated'] = now(); return put('projects', data)
 
 @app.post('/api/upload')
-async def upload(file: UploadFile = File(...)):
+async def upload(request:Request,file: UploadFile = File(...),clientId:str=Form(default='')):
+    remote=os.getenv('CLIP_REMOTE','false').lower()=='true'
+    if clientId:
+        if 'production_protect' in globals():production_protect(request,{'clientId':clientId})
+        get('clients',clientId)
+    if remote and production_principal(request)['role']=='collaborator' and not clientId:raise HTTPException(403,'Selecciona primero un espacio de cliente autorizado antes de subir el recurso.')
     suffix = Path(file.filename or '').suffix.lower()
     if suffix not in ('.mp4', '.mov', '.mkv', '.webm', '.wav', '.mp3', '.m4a', '.png', '.jpg', '.jpeg'):
         raise HTTPException(400, 'Formato no admitido')
@@ -188,14 +194,15 @@ async def upload(file: UploadFile = File(...)):
         with p.open('wb') as out:
             while chunk := await file.read(1024 * 1024):
                 size += len(chunk)
-                if size > 1024**3: raise ValueError('El límite es 1 GB')
+                limit=max(1,min(1024,int(os.getenv('CLIP_MAX_UPLOAD_MB','1024'))))*1024**2
+                if size > limit: raise ValueError(f'El archivo supera el límite de {limit//1024**2} MB configurado en este servidor')
                 out.write(chunk)
         if suffix in ('.png', '.jpg', '.jpeg'):
             with Image.open(p) as im: im.verify()
         else:
             test = subprocess.run([ffmpeg(), '-v', 'error', '-i', str(p), '-t', '0.1', '-f', 'null', '-'], capture_output=True, timeout=20)
             if test.returncode: raise ValueError('Archivo multimedia inválido')
-        data={'id':name,'name': name, 'url': '/media/uploads/' + name, 'original': file.filename, 'size': size,'license':'Aportado por el usuario: comprobar autorización','author':'Usuario','attribution':'','created':now()}
+        data={'id':name,'name': name, 'url': '/media/uploads/' + name, 'original': file.filename, 'size': size,'license':'Aportado por el usuario: comprobar autorización','author':'Usuario','attribution':'','created':now(),'clientId':clientId}
         put('assets',data)
         return data
     except Exception as e:
@@ -577,6 +584,8 @@ if not all_rows('projects'):
 
 import backend.production
 backend.production.install(app,sys.modules[__name__])
+from backend.cloud import install_cloud
+install_cloud(app,sys.modules[__name__])
 
 # Cross-origin API access is opt-in; the local editor keeps its current network policy.
 allowed_origins=[x.strip() for x in os.getenv('CLIP_ALLOWED_ORIGINS','').split(',') if x.strip()]

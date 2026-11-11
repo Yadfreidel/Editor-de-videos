@@ -1,10 +1,10 @@
 'use client';
 import {useEffect,useState} from 'react';
-import {isPages,apiOrigin,browserMode} from './connection';
+import {isPages,isServerHosted,apiOrigin,browserMode} from './connection';
 export default function DeploymentBar(){
  const [origin,setOrigin]=useState(''),[editing,setEditing]=useState(false),[error,setError]=useState(''),[ready,setReady]=useState(false),[checking,setChecking]=useState(false);
  useEffect(()=>{setReady(true);const configure=()=>{setOrigin(apiOrigin());setEditing(true);setError('');requestAnimationFrame(()=>document.getElementById('clip-server-connection')?.scrollIntoView({behavior:'smooth',block:'start'}))};window.addEventListener('clip:configure-server',configure);return()=>window.removeEventListener('clip:configure-server',configure)},[]);
- if(!isPages||!ready)return null;
+ if(!isPages||isServerHosted||!ready)return null;
  return <section className="deployment-bar" id="clip-server-connection"><div><b>{browserMode()?'Modo navegador':'Servidor de video configurado'}</b><p>{browserMode()?'Puedes escribir, editar y guardar guiones en este teléfono o navegador. Para generar voz, transcribir y exportar MP4 falta conectar un servidor de video.':'Los proyectos y archivos se guardan en el servidor configurado. Los proyectos del modo navegador permanecen guardados por separado en este dispositivo.'}</p></div><button className="outline" onClick={()=>{setOrigin(apiOrigin());setEditing(!editing);setError('')}}>Configurar servidor</button>{editing&&<form onSubmit={async e=>{e.preventDefault();setError('');setChecking(true);try{
   if(!origin.trim())throw Error('Introduce la dirección de un servidor existente o selecciona «Usar modo navegador».');
   const url=new URL(origin.trim());if(!['http:','https:'].includes(url.protocol)||url.username||url.password||url.search||url.hash||url.pathname!=='/')throw Error('Introduce la dirección del servidor sin rutas, claves ni parámetros.');

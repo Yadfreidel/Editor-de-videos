@@ -84,14 +84,16 @@ def install(app,c):
         return
     (root/'private_reviews').mkdir(exist_ok=True)
     ownerfile=root/'owner-access.txt'
-    if not ownerfile.exists():ownerfile.write_text(secrets.token_urlsafe(32),encoding='utf-8')
-    ownerkey=ownerfile.read_text(encoding='utf-8').strip()
+    configured_key=c.os.getenv('CLIP_OWNER_KEY','')
+    if c.os.getenv('CLIP_REMOTE','false').lower()=='true' and len(configured_key)<32:raise RuntimeError('Configura CLIP_OWNER_KEY como secreto de al menos 32 caracteres antes de publicar.')
+    if not configured_key and not ownerfile.exists():ownerfile.write_text(secrets.token_urlsafe(32),encoding='utf-8')
+    ownerkey=configured_key or ownerfile.read_text(encoding='utf-8').strip()
     request_lock=threading.RLock(); batch_lock=threading.RLock()
 
     def principal(request):
         bearer=request.headers.get('authorization','').removeprefix('Bearer ').strip()
         token=bearer or request.headers.get('x-owner-key') or request.cookies.get('clip_owner','')
-        if token and secrets.compare_digest(token,ownerkey):return {'role':'owner'}
+        if token and secrets.compare_digest(token.encode(),ownerkey.encode()):return {'role':'owner'}
         if token:
             hashed=hashlib.sha256(token.encode()).hexdigest()
             for item in c.all_rows('principals'):
@@ -108,6 +110,7 @@ def install(app,c):
             try:project=c.get('projects',project)
             except HTTPException:project={}
         clientid=record.get('clientId') or project.get('clientId') or record.get('payload',{}).get('project',{}).get('clientId') or record.get('payload',{}).get('clientId')
+        if c.os.getenv('CLIP_REMOTE','false').lower()=='true' and principal(request)['role']=='collaborator' and not clientid:raise HTTPException(403,'Este acceso solo permite trabajar en los espacios de cliente asignados.')
         if record.get('name') and record.get('url','').startswith('/media/uploads/'):
             for p in c.all_rows('projects'):
                 if p.get('clientId') and record['name'] in json.dumps(p) and not can_client(request,p['clientId']):raise HTTPException(403,'Recurso de un cliente protegido')
@@ -183,22 +186,22 @@ def install(app,c):
         except HTTPException as e:return JSONResponse(status_code=e.status_code,content={'detail':e.detail})
 
     @app.get('/api/production/status')
-    def status(request:Request):return {'migration':migration,'role':principal(request)['role'],'remoteConfigured':False,'ownerKeyFile':str(ownerfile),'levels':{'Individual':['Editor local','Narración','Exportación'],'Pro':['Lotes','Perfiles de marca','Análisis'],'Agencia':['Clientes','Colaboradores','Revisión privada']}}
+    def status(request:Request):return {'migration':migration,'role':principal(request)['role'],'remoteConfigured':c.os.getenv('CLIP_REMOTE','false').lower()=='true','ownerKeyFile':None if configured_key else str(ownerfile),'levels':{'Individual':['Editor local','Narración','Exportación'],'Pro':['Lotes','Perfiles de marca','Análisis'],'Agencia':['Clientes','Colaboradores','Revisión privada']}}
     class Login(BaseModel):key:str
     @app.post('/api/access/login')
     def login(req:Login,response:Response):
-        role='owner' if secrets.compare_digest(req.key,ownerkey) else None
+        role='owner' if secrets.compare_digest(req.key.encode(),ownerkey.encode()) else None
         if not role:
             hashed=hashlib.sha256(req.key.encode()).hexdigest()
             role=next((p['role'] for p in c.all_rows('principals') if secrets.compare_digest(p['hash'],hashed) and not p.get('revoked')),None)
         if not role:raise HTTPException(403,'Clave local incorrecta o revocada')
-        response.set_cookie('clip_owner',req.key,httponly=True,samesite='strict',max_age=86400)
+        response.set_cookie('clip_owner',req.key,httponly=True,samesite='strict',secure=c.os.getenv('CLIP_REMOTE','false').lower()=='true',max_age=86400)
         return {'role':role}
     @app.post('/api/access/logout')
     def logout(response:Response):response.delete_cookie('clip_owner');return {'role':'anonymous'}
 
     @app.get('/api/brands')
-    def brands():return c.all_rows('brand_profiles')
+    def brands(request:Request):return visible(request,c.all_rows('brand_profiles'))
     @app.post('/api/brands')
     def create_brand(req:Profile):return c.put('brand_profiles',{'id':c.uid(),**req.model_dump(),'updated':c.now()})
     @app.put('/api/brands/{key}')

@@ -44,6 +44,7 @@ def install_analytics(app,c,protect,visible):
         except HTTPException as e:
             if e.status_code==403 or strict:raise
             p={}
+        protect(request,p)
         for field in ('account','platform','variant','period','publicationId','window'):row[field]=row[field].strip()
         for field in ('hookType','template','format'):
             if not row.get(field):row[field]=p.get(field,'')

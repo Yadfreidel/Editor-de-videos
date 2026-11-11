@@ -107,7 +107,8 @@ def install_review(app,c,protect,principal,require_owner):
     @app.post('/api/reviews/{key}/invites')
     def invite(key:str,req:Invite,request:Request):
         r=owner_review(key,request);token=secrets.token_urlsafe(32);data={'id':c.uid(),'hash':hashlib.sha256(token.encode()).hexdigest(),'reviewId':key,'clientId':r['clientId'],'version':r['version'],'role':'reviewer','name':req.name,'expires':time.time()+req.hours*3600,'revoked':False,'created':c.now()};c.put('review_tokens',data)
-        return {'id':data['id'],'url':'/review/'+token,'token':token,'expires':data['expires'],'notice':'Enlace local: funciona en este equipo. Para acceso fuera de la PC hace falta un servicio remoto autorizado; no se ha subido ningún archivo.'}
+        cloud=c.os.getenv('CLIP_REMOTE','false').lower()=='true'
+        return {'id':data['id'],'url':('/review/#token=' if cloud else '/review/')+token,'token':token,'expires':data['expires'],'notice':'Enlace privado de esta versión en el servidor, con vencimiento y revocación.' if cloud else 'Enlace local: funciona en este equipo. Para acceso fuera de la PC hace falta un servicio remoto autorizado; no se ha subido ningún archivo.'}
     @app.post('/api/reviews/{key}/invites/{tokenid}/revoke')
     def revoke(key:str,tokenid:str,request:Request):
         owner_review(key,request);t=c.get('review_tokens',tokenid)
@@ -116,6 +117,7 @@ def install_review(app,c,protect,principal,require_owner):
     @app.post('/api/reviews/{key}/share')
     def share(key:str,request:Request):
         owner_review(key,request)
+        if c.os.getenv('CLIP_REMOTE','false').lower()=='true':return {'notice':'La vista previa seleccionada ya está en este servidor privado. Crea un enlace de revisión con vencimiento; no se publican originales ni otros archivos.'}
         raise HTTPException(409,'Servicio remoto no configurado. Puedes descargar la vista previa real. No se sube nada; un adaptador remoto debe exigir confirmación, HTTPS y permisos por cliente, clip y versión.')
     def reviewer(key,request):
         token=request.headers.get('authorization','').removeprefix('Bearer ').strip()
