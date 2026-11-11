@@ -4,6 +4,8 @@ Estudio local de videos cortos en español. Next.js + TypeScript + Tailwind 4, F
 
 La ampliación añade **Lotes, Marcas, Clientes y Análisis**. Consulta [la prueba principal paso a paso en Windows, migraciones y revisión privada](docs/PRODUCTION.md) y [la organización futura Individual / Pro / Agencia](docs/LEVELS.md). Todas las funciones siguen incluidas, sin cobros. El editor anterior y su arranque se conservan.
 
+**Publicación web:** [Abrir la interfaz en GitHub Pages](https://yadfreidel.github.io/Editor-de-videos/). Consulta [despliegue y límites de Pages](docs/GITHUB-PAGES.md). Pages publica la app interactiva en modo navegador; la generación y exportación de video requieren el servidor local o una API propia.
+
 ## Inicio en Windows
 
 Instala Node.js 20.9 o superior y Python 3.11 o superior de 64 bits. Se probó con Node 24 y Python 3.14 en Windows. Desde PowerShell, en esta carpeta:

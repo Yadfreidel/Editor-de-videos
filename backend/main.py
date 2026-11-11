@@ -577,3 +577,10 @@ if not all_rows('projects'):
 
 import backend.production
 backend.production.install(app,sys.modules[__name__])
+
+# Cross-origin API access is opt-in; the local editor keeps its current network policy.
+allowed_origins=[x.strip() for x in os.getenv('CLIP_ALLOWED_ORIGINS','').split(',') if x.strip()]
+if allowed_origins:
+    if '*' in allowed_origins:raise ValueError('CLIP_ALLOWED_ORIGINS requiere orígenes explícitos; no se admite *.')
+    from fastapi.middleware.cors import CORSMiddleware
+    app.add_middleware(CORSMiddleware,allow_origins=allowed_origins,allow_credentials=False,allow_methods=['GET','POST','PUT'],allow_headers=['Content-Type','Authorization','x-owner-key'])

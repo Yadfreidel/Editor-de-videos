@@ -1,5 +1,7 @@
 node_modules/
 .next/
+.next-pages/
+out/
 .venv/
 workspace/
 __pycache__/

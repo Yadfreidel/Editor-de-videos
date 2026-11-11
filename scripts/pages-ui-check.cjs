@@ -1,0 +1,21 @@
+const {chromium}=require('@playwright/test');
+const fs=require('node:fs');
+(async()=>{
+ const base=process.env.CLIP_PAGES_URL||'http://127.0.0.1:8087/Editor-de-videos/';
+ const browser=await chromium.launch({headless:true});const context=await browser.newContext({viewport:{width:1440,height:1000}});const page=await context.newPage();page.setDefaultTimeout(20000);
+ const errors=[];const failed=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push(r.url())});
+ await page.goto(base);await page.getByText('Modo navegador',{exact:true}).first().waitFor();
+ await page.locator('#script').fill('Esta historia funciona desde GitHub Pages. El storyboard se conserva en este navegador.');
+ await page.getByRole('button',{name:'Crear storyboard',exact:true}).click();await page.getByText('Inspector',{exact:true}).waitFor();
+ await page.locator('.inspector textarea').nth(1).fill('Edición persistente en Pages');await page.waitForTimeout(650);
+ await page.reload();await page.locator('.sidebar').getByRole('button',{name:'Proyectos',exact:true}).click();await page.locator('.projects-all .project-card').first().click();
+ if(await page.locator('.inspector textarea').nth(1).inputValue()!=='Edición persistente en Pages')throw Error('Browser autosave did not persist');
+ await page.getByRole('button',{name:'Exportar',exact:true}).click();const dialog=page.getByRole('dialog');
+ const pending=page.waitForEvent('download');await dialog.getByRole('button',{name:'Descargar proyecto JSON',exact:true}).click();const download=await pending;const data=JSON.parse(fs.readFileSync(await download.path(),'utf8'));if(data.scenes[0].overlay!=='Edición persistente en Pages')throw Error('Incorrect JSON export');
+ const subtitles=page.waitForEvent('download');await dialog.getByRole('button',{name:'Descargar subtítulos SRT',exact:true}).click();const srt=fs.readFileSync(await (await subtitles).path(),'utf8');if(!srt.includes('-->')||!srt.includes('Esta historia'))throw Error('Invalid SRT download');
+ await page.getByRole('button',{name:'Cerrar',exact:true}).click();await page.setViewportSize({width:390,height:844});
+ if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Static mobile overflow');
+ await page.goto(base+'review/#token=invalid-test');await page.locator('.alert[role=alert]').waitFor();
+ if(failed.length)throw Error('HTTP errors: '+failed.join(', '));if(errors.length)throw Error(errors.join('\n'));
+ await browser.close();console.log('Pages checks passed: app, assets, browser editing, autosave, JSON/SRT, mobile and static review route.');
+})().catch(e=>{console.error(e);process.exit(1)});
